@@ -14,7 +14,7 @@ app.use(express.static('public'))
 mongodb.connect(connectionString,{useNewUrlParser:true, useUnifiedTopology: true },function(err,client)
 {
     db=client.db();
-    app..listen(process.env.PORT || 5000);
+    app.listen(process.env.PORT || 5000);
 })
 function passwordProtected(req,res,next)
 {
